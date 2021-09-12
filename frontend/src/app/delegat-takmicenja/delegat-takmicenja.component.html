@@ -1,0 +1,84 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Olimpijske igre</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="login">Login</a>
+          <a class="nav-link" href="register">Registracija</a>
+          <a class="nav-link" href="neregistrovan-korisnik">Neregistrovan korisnik</a>
+          <button class="nav-link" (click)="odjaviSe()">Odjavi se</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+<br/>
+<div class="main">
+    <h2>Unesi raspored takmicenja za finalnu grupu:</h2>
+    <form ngNativeValidate #forma3>
+
+        <div class="mb-3">
+            <label for="takm" class="form-label">Izaberi takmicenje</label>
+            <select class="form-select" name='takmicenje' [(ngModel)]='takmicenje' id="takm" (change)='unesiLokacije()' required>
+                <option selected='disabled'>Izaberi takmicenje</option>
+                <option *ngFor='let t of takmicenja'>{{t.sport}},{{t.sportskaDisciplina}},{{t.pol}}</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="datum" class="form-label">Datum</label>
+            <input type="text" name="datum" [(ngModel)]="datum" required class="form-control" id="datum" >
+          </div>
+
+          
+        <div class="mb-3">
+            <label for="vreme" class="form-label">Vreme</label>
+            <input type="text" name="vreme" [(ngModel)]="vreme" required class="form-control" id="vreme" >
+        </div>
+  
+
+        <div class="mb-3">
+            <label for="lok" class="form-label">Lokacija</label>
+            <select class="form-select" name='lokacija' [(ngModel)]='lokacija' id="lok" required>
+                <option selected='disabled'>Izaberi lokaciju</option>
+                    <option *ngFor='let l of lokacije'>{{l.lokacija}}</option>
+            </select>
+        </div> 
+        <button type="submit" class="btn btn-primary" (click)='izgenerisiTakmicare()' >Izgenerisi finalne takmicare</button>
+        <table>
+            <tr>
+                <th>Finalni takmicari</th>
+            </tr>
+            <tr *ngFor='let u of izgenerisaniUcesnici'>
+                <td colspan="2">{{u.ucesnik}}</td>
+            </tr>
+        </table>
+        <br/>
+        <button type="submit" class="btn btn-primary" (click)="forma3.checkValidity()?unesiRaspored():null">
+            Unesi raspored
+        </button>
+      </form>
+</div>
+
+<br/><br/>
+<div class='main1'>
+    <h2>Unesi rezultat takmicenja:</h2>
+    <table border="2" class="table" style="background-color: lightblue;">
+        <thead>
+            <tr>
+                <th scope="col">Takmicenje</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let r of raspored'>
+                <td><a style="cursor: pointer;" (click)='unesiRezultat(r)'>{{r.sport}},{{r.sportskaDisciplina}},{{r.pol}}</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br/><br/>
+
+<br/><br/>
