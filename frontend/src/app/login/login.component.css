@@ -1,0 +1,23 @@
+
+.tokio{
+  text-align: center;
+}
+
+table{
+    width: 500px;
+}
+
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+  /* Style page content */
+  .main {
+    margin-left: 260px; /* Same as the width of the sidebar */
+    margin-right: 260px;
+    margin-bottom: 150px;
+    padding: 0px 10px;
+  }
+  
