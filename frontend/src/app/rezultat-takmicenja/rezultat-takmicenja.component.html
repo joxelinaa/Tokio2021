@@ -1,0 +1,163 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Olimpijske igre</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="login">Login</a>
+          <a class="nav-link" href="register">Registracija</a>
+          <a class="nav-link" href="neregistrovan-korisnik">Neregistrovan korisnik</a>
+          <button class="nav-link" (click)="odjaviSe()">Odjavi se</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="delegat">Delegat</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Rezultati takmicenja</li>
+    </ol>
+  </nav>
+<div *ngIf="raspored.sportskaDisciplina!='singl'">
+    <h2>Unesi rezultat za svakog takmicara:</h2>
+    <h6>{{poruka}}</h6>
+    <form ngNativeValidate #forma2>
+      <table class="table-primary">
+          <thead>
+              <tr>
+                  <th>Takmicar</th>
+                  <th>Rezultat</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor='let t of takmicari'>
+                  <td>{{t.ucesnik}}</td>
+                  <td>
+                      <input type="text" class="form-control" name="takmicari" [(ngModel)]='t.rezultat' required>
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="2"><button type="submit" class="btn btn-primary" (click)='forma2.checkValidity()?unesiRezultate():null' >Unesi rezultate</button></td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                      <button (click)='azurirajRang()' type="submit" >Azuriraj rang</button>
+                      -Obavezno nakon unosa rezultata
+                  </td>
+              </tr>
+          </tbody>
+  
+      </table>
+      <br/>
+    </form>
+  
+</div>
+<div *ngIf="raspored.sportskaDisciplina=='singl'">
+    <h2>Tenis singl</h2>
+    <h6>Format unosa: x:x</h6>
+    <div *ngIf='takmicari.length==4'>
+        <table class="table-primary">
+            <tr>
+                <th>Igraci</th>
+                <th>Rezultat</th>
+            </tr>
+            <tr>
+                <td>{{takmicari[0].ucesnik}}-{{takmicari[2].ucesnik}}</td>
+                <td><input type="text" name="rezultat13S" [(ngModel)]='rezultat13S'></td>
+            </tr>
+            <tr>
+                <td>{{takmicari[1].ucesnik}}-{{takmicari[3].ucesnik}}</td>
+                <td><input type="text" name="rezultat24S" [(ngModel)]='rezultat24S'></td>
+            </tr>
+        </table>
+        <button (click)="unesiRezPrviKrug4()">Unesi rezultate</button>
+        <div *ngIf='drugiKrug==true'>
+            <table class="table-primary">
+                <tr>
+                    <th>/</th>
+                    <th>Igraci</th>
+                    <th>Rezultat</th>
+                </tr>
+                <tr>
+                    <td>Finale</td>
+                    <td>{{rezultat13pobednik.ucesnik}}-{{rezultat24pobednik.ucesnik}}</td>
+                    <td><input type="text" name="rezultatFinaleS" [(ngModel)]='rezultatFinaleS'></td>
+                </tr>
+                <tr>
+                    <td>Za trece mesto:</td>
+                    <td> {{rezultat13gubitnik.ucesnik}}-{{rezultat24gubitnik.ucesnik}}</td>
+                    <td><input type="text" name="rezultatMedjuS" [(ngModel)]='rezultatMedjuS'></td>
+                </tr>
+            </table>
+            <button (click)="unesiRezDrugiKrug4()">Unesi rezultate</button>
+        </div>
+    </div>
+    <div *ngIf='takmicari.length==8'>
+        <table class="table-primary">
+            <tr>
+                <th>Igraci</th>
+                <th>Rezultat</th>
+            </tr>
+            <tr>
+                <td>{{takmicari[0].ucesnik}}-{{takmicari[2].ucesnik}}</td>
+                <td><input type="text" name="rezultat13S" [(ngModel)]='rezultat13S'></td>
+            </tr>
+            <tr>
+                <td>{{takmicari[1].ucesnik}}-{{takmicari[3].ucesnik}}</td>
+                <td><input type="text" name="rezultat24S" [(ngModel)]='rezultat24S'></td>
+            </tr>
+            <tr>
+                <td>{{takmicari[4].ucesnik}}-{{takmicari[6].ucesnik}}</td>
+                <td><input type="text" name="rezultat57S" [(ngModel)]='rezultat57S'></td>
+            </tr>
+            <tr>
+                <td>{{takmicari[5].ucesnik}}-{{takmicari[7].ucesnik}}</td>
+                <td><input type="text" name="rezultat68S" [(ngModel)]='rezultat68S'></td>
+            </tr>
+        </table>
+        <button (click)="unesiRezPrviKrug8()">Unesi rezultate</button>
+
+        <div *ngIf='drugiKrug==true'>
+            <table class="table-primary">
+                <tr>
+                    <th>Igraci</th>
+                    <th>Rezultat</th>
+                </tr>
+                <tr>
+                    <td>{{rezultat13pobednik.ucesnik}}-{{rezultat57pobednik.ucesnik}}</td>
+                    <td><input type="text" name="rezultatPolu1" [(ngModel)]='rezultatPolu1'></td>
+                </tr>
+                <tr>
+                    <td> {{rezultat24pobednik.ucesnik}}-{{rezultat68pobednik.ucesnik}}</td>
+                    <td><input type="text" name="rezultatPolu2" [(ngModel)]='rezultatPolu2'></td>
+                </tr>
+            </table>
+            <button (click)="unesiRezDrugiKrug8()">Unesi rezultate</button>
+
+            <div *ngIf='treciKrug==true'>
+                <table class="table-primary">
+                    <tr>
+                        <th>/</th>
+                        <th>Igraci</th>
+                        <th>Rezultat</th>
+                    </tr>
+                    <tr>
+                        <td>Finale</td>
+                        <td>{{rezultat1357pobednik.ucesnik}}-{{rezultat2468pobednik.ucesnik}}</td>
+                        <td><input type="text" name="rezultatFinaleS" [(ngModel)]='rezultatFinaleS'></td>
+                    </tr>
+                    <tr>
+                        <td>Za trece mesto</td>
+                        <td> {{rezultat1357gubitnik.ucesnik}}-{{rezultat2468gubitnik.ucesnik}}</td>
+                        <td><input type="text" name="rezultatMedjuS" [(ngModel)]='rezultatMedjuS'></td>
+                    </tr>
+                </table>
+                <button (click)="unesiRezTreciKrug8()">Unesi rezultate</button>
+                <button (click)='azurirajRang()'>Azuriraj rang</button>-Obavezno nakon unosa rezultata
+            </div>
+        </div>
+    </div>
+</div>
+  
