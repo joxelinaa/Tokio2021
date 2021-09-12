@@ -1,0 +1,77 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Olimpijske igre</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="login">Login</a>
+        <a class="nav-link" href="register">Registracija</a>
+        <a class="nav-link" href="neregistrovan-korisnik">Neregistrovan korisnik</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav aria-label="breadcrumb" style="background-color:lightblue">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="neregistrovan-korisnik">Neregistrovan korisnik</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Pregled zemalja ucesnica</li>
+    </ol>
+  </nav>
+
+<div class="tabela">
+  <br/>
+  <div *ngIf='zemlje.length > 10'>
+    Broj prikaza po stranici: 
+    <select [(ngModel)]='itemsPerPage'>
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+    </select>
+</div>
+
+<div *ngIf='zemlje.length > 10 ; else bezPaginacije'>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+              <th>Zastava</th>
+              <th>Zemlja</th>
+              <th>Broj ucesnika</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let z of zemlje | paginate: {itemsPerPage:itemsPerPage,currentPage:p};">
+                <td>
+                  <img src="/assets/{{z.zemlja}}.jpg" width="50px" height="35px">
+                </td>
+                <td>{{z.zemlja}}</td>
+                <td>{{z.brojSportista}}</td>
+            </tr>
+        </tbody>
+        <pagination-controls (pageChange)="p = $event" ></pagination-controls>
+    </table>
+</div>
+
+
+<ng-template #bezPaginacije>
+  <table class="table table-bordered" border="1">
+      <tr>
+          <th>Zastava</th>
+          <th>Zemlja</th>
+          <th>Broj ucesnika</th>
+      </tr>
+      <tr *ngFor='let z of zemlje'>
+          <td>
+            <img src="/assets/{{z.zemlja}}.jpg" width="50px" height="35px">
+          </td>
+          <td>{{z.zemlja}}</td>
+          <td>{{z.brojSportista}}</td>
+      </tr>
+  </table>
+</ng-template>
+</div>
+
+
+
