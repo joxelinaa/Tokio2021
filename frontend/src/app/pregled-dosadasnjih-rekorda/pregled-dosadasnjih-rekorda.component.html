@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Olimpijske igre</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="login">Login</a>
+        <a class="nav-link" href="register">Registracija</a>
+        <a class="nav-link" href="neregistrovan-korisnik">Neregistrovan korisnik</a>
+        <button class="nav-link" (click)="odjaviSe()">Odjavi se</button>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav aria-label="breadcrumb" style="background-color: lightblue;">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="organizator">Organizator</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Pregled dosadasnjih rekorda</li>
+    </ol>
+  </nav>
+
+<div class="tabela">
+  <table class="table table-bordered" border="1">
+    <thead>
+      <tr >
+        <th>Godina</th>
+        <th>Mesto</th>
+        <th>Sportska Disciplina</th>
+        <th>Takmicar</th>
+        <th>Nacionalnost</th>
+        <th>Rezultat</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let r of rekordi'>
+        <td>{{r.godina}}</td>
+        <td>{{r.mesto}}</td>
+        <td>{{r.sportskaDisciplina}}</td>
+        <td>{{r.takmicar}}</td>
+        <td>{{r.nacionalnost}}</td>
+        <td>{{r.vremeIDuzina}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br/><br/>
