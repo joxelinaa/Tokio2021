@@ -1,0 +1,139 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Olimpijske igre</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="login">Login</a>
+          <a class="nav-link" href="register">Registracija</a>
+          <a class="nav-link" href="neregistrovan-korisnik">Neregistrovan korisnik</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <ul class="nav justify-content-center" style="background-color:lightblue">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="neregistrovan-korisnik">Pretrazi sportiste</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="pregled-zemalja-ucesnica">Pregled zemalja ucesnica</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="pregled-osvojenih-medalja">Pregled osvojenih medalja</a>
+    </li>
+  </ul>
+
+
+  
+<div class="main">
+    <h2>Pretrazi sportiste</h2>
+    <form>
+        <div class="mb-3">
+          <label for="imeprez" class="form-label">Ime i prezime</label>
+          <input type="text" name="imePrezime" [(ngModel)]="imePrezime"  class="form-control" id="imeprez" >
+        </div>
+        <div class="mb-3">
+            <label for="zemlja" class="form-label">Zemlja</label>
+            <select class="form-select" name='zemlja' [(ngModel)]='zemlja' id="zemlja">
+                <option value="sve zemlje" >Sve zemlje</option>
+                <option *ngFor='let z of zemlje'>{{z.zemlja}}</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="sport" class="form-label">Sport</label>
+            <select class="form-select" name='sport' [(ngModel)]='sport' id="sport">
+                <option value="svi sportovi">Svi sportovi</option>
+                <option *ngFor='let s of sportoviFiltrirani'>{{s.sport}}</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="dis" class="form-label">Disciplina</label>
+            <select class="form-select" name='disciplina' [(ngModel)]='disciplina' id="dis">
+                <option value="sve discipline">Sve sportske discipline </option>
+                <option *ngFor='let d of discipline'>{{d.sportskaDisciplina}}</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="pol" [(ngModel)]='pol' id="pol" value="M">
+                <label class="form-check-label" for="pol">Muskarci</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="pol" [(ngModel)]='pol' id="pol" value="Z">
+                <label class="form-check-label" for="pol">Zene</label>
+            </div>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name='osvajaci' [(ngModel)]='osvajaci' value="osvajac" id="osvajac">
+            <label class="form-check-label" for="osvajac">
+              Samo osvajaci medalja
+            </label>
+        </div>    
+        <br/>
+        <button type="submit" class="btn btn-primary" (click)='pretraga()'>Pretrazi</button>
+      </form>
+</div>
+
+<div *ngIf='sportistiDisciplineFilter.length > 10'>
+  Broj prikaza po stranici: 
+  <select [(ngModel)]='itemsPerPage'>
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="50">50</option>
+      <option value="100">100</option>
+  </select>
+</div>
+
+<div *ngIf='sportistiDisciplineFilter.length > 10 ; else bezPaginacije'>
+  <table class="table table-bordered">
+      <thead>
+        <tr>
+            <th scope="col">Ime i prezime</th>
+            <th scope="col">Zemlja</th>
+            <th scope="col">Sport</th>
+            <th scope="col">Disciplina</th>
+            <th scope="col">Pol</th>
+            <th scope="col">Osvajac medalja</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let sp of sportistiDisciplineFilter | paginate: {itemsPerPage:itemsPerPage,currentPage:p};">
+            <td>{{sp.imePrezime}}</td>
+            <td>{{sp.zemlja}}</td>
+            <td>{{sp.sport}}</td>
+            <td>{{sp.discipline}}</td>
+            <td>{{sp.pol}}</td>
+            <td>{{sp.osvajac}}</td>
+          </tr>
+      </tbody>
+      <pagination-controls (pageChange)="p = $event" ></pagination-controls>
+  </table>
+</div>
+
+
+<ng-template #bezPaginacije>
+<table class="table table-bordered" border="1" *ngIf='sportistiDisciplineFilter.length>0'>
+  <tr>
+    <th scope="col">Ime i prezime</th>
+    <th scope="col">Zemlja</th>
+    <th scope="col">Sport</th>
+    <th scope="col">Disciplina</th>
+    <th scope="col">Pol</th>
+    <th scope="col">Osvajac medalja</th>
+  </tr>
+    <tr *ngFor='let sp of sportistiDisciplineFilter'>
+      <td>{{sp.imePrezime}}</td>
+      <td>{{sp.zemlja}}</td>
+      <td>{{sp.sport}}</td>
+      <td>{{sp.discipline}}</td>
+      <td>{{sp.pol}}</td>
+      <td>{{sp.osvajac}}</td>
+    </tr>
+</table>
+</ng-template>
+
+
+<br/><br/>

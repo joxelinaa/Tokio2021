@@ -1,0 +1,11 @@
+.main {
+ /* Same as the width of the sidebar */
+    margin-right: 760px;
+    margin-left: 10px;
+    padding: 0px 10px;
+  }
+
+.tabela{
+  margin-right: 500px;
+  margin-left: 10px;
+}
