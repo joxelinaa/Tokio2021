@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+header{
+    text-align: center;
+    position: fixed;
+    color:white;
+    width: 100%;
+	top: 0;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif, Times, serif;
+}
+footer{
+    text-align: center;
+    position: fixed;
+    color:black;
+    background-color:white;
+    width: 100%;
+	bottom: 0;
+    height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
