@@ -1,0 +1,13 @@
+*backend
+command promt:
+-cd /lokacija foldera/
+tsc
+npm run serve
+
+*frontend
+command promt:
+-cd /lokacija foldera/
+ng new app-->ubaciti ceo src i ostale okacene fajlove sa gita umesto onih iz novog projekta
+npm install alertifyjs --save
+npm i ngx-pagination
+ng serve --open
