@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Olimpijske igre<br/></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="login">Login</a>
+          <a class="nav-link" href="register">Registracija</a>
+          <a class="nav-link" href="neregistrovan-korisnik">Neregistrovan korisnik</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class='tokio'> 
+    <h1>TOKYO 2021</h1>
+    <img src="/assets/olimpijada.jpg" style="height: 50%;" style="width: 10%;"><br/>
+</div>
+
+
+
+<div class="main">
+    <form ngNativeValidate #forma7>
+        <div class="mb-3">
+          <label for="kor" class="form-label">Koriscnicko ime</label>
+          <input type="text" name="kor_ime" [(ngModel)]="kor_ime" required class="form-control" id="kor" >
+        </div>
+        <div class="mb-3">
+          <label for="sloz" class="form-label">Stara lozinka</label>
+          <input type="password" name="stara_lozinka" [(ngModel)]="stara_lozinka" required class="form-control" id="sloz">
+        </div>
+        <div class="mb-3">
+            <label for="nloz" class="form-label">Nova lozinka</label>
+            <input type="password" name="nova_lozinka" [(ngModel)]="nova_lozinka" required class="form-control" id="nloz">
+          </div> 
+          <br/>
+        <button type="submit" class="btn btn-primary" (click)='forma7.checkValidity()?promeniLozinku():null'>
+            Promeni lozinku
+        </button>
+        <output>{{poruka}}</output>
+      </form>
+</div>

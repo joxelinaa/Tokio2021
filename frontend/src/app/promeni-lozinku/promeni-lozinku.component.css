@@ -1,0 +1,11 @@
+  /* Style page content */
+  .main {
+    margin-left: 260px; /* Same as the width of the sidebar */
+    margin-right: 260px;
+    padding: 0px 10px;
+  }
+  
+.tokio{
+    text-align: center;
+  }
+  
