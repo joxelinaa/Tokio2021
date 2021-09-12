@@ -1,0 +1,102 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Olimpijske igre</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="login">Login</a>
+          <a class="nav-link" href="register">Registracija</a>
+          <a class="nav-link" href="neregistrovan-korisnik">Neregistrovan korisnik</a>
+          <button class="nav-link" (click)="odjaviSe()">Odjavi se</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+<br/>
+
+<div class="main">
+    <h2>Prijavi pojedinca za takmicenje</h2>
+    <form ngNativeValidate #forma1>
+        <div class="mb-3">
+          <label for="imeprez" class="form-label">Ime i prezime</label>
+          <input type="text" name="imePrezime" [(ngModel)]="imePrezime" required class="form-control" id="imeprez" >
+        </div>
+
+        <div class="mb-3">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="pol" [(ngModel)]='pol' id="pol" value="M" required>
+                <label class="form-check-label" for="pol">Muskarci</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="pol" [(ngModel)]='pol' id="pol" value="Z" required>
+                <label class="form-check-label" for="pol">Zene</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="sport" class="form-label">Sport</label>
+            <select class="form-select" name='sport' [(ngModel)]='sport' id="sport" required (change)="prikaziDiscipline()">
+                <option [ngValue]='undefined' selected disabled >Odaberite sport</option>
+                <option *ngFor='let sf of sportoviFiltriraniI'>{{sf.sport}}</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="dis" class="form-label">Disciplina</label>
+            <select class="form-select" name='disc' [(ngModel)]='disc' id="dis" required>
+                <option [ngValue]='undefined' selected disabled>Odaberite disciplinu</option>
+               <option *ngFor='let d of discipline' >{{d.sportskaDisciplina}}</option> 
+            </select>
+        </div> 
+        <br/>
+        <button type="submit" class="btn btn-primary" (click)='forma1.checkValidity()?prijaviPojedinca():null'>Prijavi</button>
+      </form>
+</div>
+<br/><br/>
+
+<div class="main">
+    <h2>Prijavi ekipu za takmicenje</h2>
+    <form ngNativeValidate #forma1ekipa>
+        <div class="mb-3">
+          <label for="ekipa" class="form-label">Ekipa</label>
+          <input type="text" name="ekipa" [(ngModel)]="ekipa" required class="form-control" id="ekipa" >
+        </div>
+
+        <div class="mb-3">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="polE" [(ngModel)]='polE' id="polE" value="M" required>
+                <label class="form-check-label" for="polE">Muskarci</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="polE" [(ngModel)]='polE' id="polE" value="Z" required>
+                <label class="form-check-label" for="polE">Zene</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="sportE" class="form-label">Sport</label>
+            <select class="form-select" name='sportE' [(ngModel)]='sportE' id="sportE" required (change)="prikaziDisciplineEkipno()">
+                <option [ngValue]='undefined' selected disabled >Odaberite sport</option>
+                <option *ngFor='let sfE of sportoviFiltriraniE'>{{sfE.sport}}</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="dis" class="form-label">Disciplina</label>
+            <select class="form-select" name='discE' [(ngModel)]='discE' id="disE" required>
+                <option [ngValue]='undefined' selected disabled>Odaberite disciplinu</option>
+               <option *ngFor='let dE of disciplineE' >{{dE.sportskaDisciplina}}</option> 
+            </select>
+        </div> 
+        <div class="mb-3">
+            <label for="br" class="form-label">Broj igraca</label>
+            <input type="text" name="brojIgraca" [(ngModel)]="brojIgraca" required class="form-control" id="br" >
+          </div>
+        <br/>
+        <button type="submit" class="btn btn-primary" (click)='forma1ekipa.checkValidity()?prijaviEkipu():null'>Prijavi</button>
+      </form>
+</div>
+
+<br/><br/><br/>
