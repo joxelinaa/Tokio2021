@@ -1,0 +1,51 @@
+/* 1 */
+{
+    "username" : "pera",
+    "ime" : "Pera",
+    "prezime" : "Peric",
+    "password" : "Pera!!11",
+    "nacionalnost" : "Hrvatska",
+    "email" : "pera@gmail.com",
+    "tip" : "vodja nacionalne delegacije",
+    "nadgleda" : -1,
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "username" : "gavra",
+    "ime" : "Gavrilo",
+    "prezime" : "Princip",
+    "password" : "aa",
+    "nacionalnost" : "Srbija",
+    "email" : "gavra@gmail.com",
+    "tip" : "vodja nacionalne delegacije",
+    "nadgleda" : -1,
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "username" : "lana",
+    "ime" : "Lana",
+    "prezime" : "Gizdovic",
+    "password" : "Lana11!!",
+    "nacionalnost" : "Hrvatska",
+    "email" : "lana@gmail.com",
+    "tip" : "delegat",
+    "nadgleda" : 0,
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "username" : "barbara",
+    "ime" : "Barbara",
+    "prezime" : "Kovacevic",
+    "password" : "Barb!!11",
+    "nacionalnost" : "Srbija",
+    "email" : "barbara@gmail.com",
+    "tip" : "delegat",
+    "nadgleda" : 0,
+    "__v" : 0
+}

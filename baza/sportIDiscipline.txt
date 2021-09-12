@@ -1,0 +1,247 @@
+/* 1 */
+{
+    "sport" : "kosarka",
+    "sportskaDisciplina" : "/",
+    "vrsta" : "ekipni",
+    "brojIgraca" : "5/12"
+}
+
+/* 2 */
+{
+    "sport" : "odbojka",
+    "sportskaDisciplina" : "/",
+    "vrsta" : "ekipni",
+    "brojIgraca" : "6/12"
+}
+
+/* 3 */
+{
+    "sport" : "vaterpolo",
+    "sportskaDisciplina" : "/",
+    "vrsta" : "ekipni",
+    "brojIgraca" : "6/13"
+}
+
+/* 4 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "100 metara trcanje",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 5 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "stafetno trcanje 100",
+    "vrsta" : "ekipno",
+    "brojIgraca" : "4/4"
+}
+
+/* 6 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "200 metara trcanje",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 7 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "400 metara trcanje",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 8 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "stafetno trcanje 400",
+    "vrsta" : "ekipno",
+    "brojIgraca" : "4/4"
+}
+
+/* 9 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "800 metara trcanje",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 10 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "5000 metara trcanje",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 11 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "10000 metara trcanje",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 12 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "skok u vis",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 13 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "skok u dalj",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 14 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "troskok",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 15 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "skok s motkom",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 16 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "bacanje kugle",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 17 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "bacanje diska",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 18 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "bacanje kladiva",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 19 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "bacanje koplja",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 20 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "maraton",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 21 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "20km brzo hodanje",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 22 */
+{
+    "sport" : "atletika",
+    "sportskaDisciplina" : "50km brzo hodanje",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 23 */
+{
+    "sport" : "biciklizam",
+    "sportskaDisciplina" : "drumska trka 225km",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 24 */
+{
+    "sport" : "plivanje",
+    "sportskaDisciplina" : "100m leptir",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 25 */
+{
+    "sport" : "plivanje",
+    "sportskaDisciplina" : "200m slobodno",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 26 */
+{
+    "sport" : "streljastvo",
+    "sportskaDisciplina" : "50m trostav",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 27 */
+{
+    "sport" : "streljastvo",
+    "sportskaDisciplina" : "10m vazdusna puska",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 28 */
+{
+    "sport" : "streljastvo",
+    "sportskaDisciplina" : "25m malokalib. pistolj",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 29 */
+{
+    "sport" : "streljastvo",
+    "sportskaDisciplina" : "10m vazdusni pistolj",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 30 */
+{
+    "sport" : "tenis",
+    "sportskaDisciplina" : "singl",
+    "vrsta" : "individ",
+    "brojIgraca" : "/"
+}
+
+/* 31 */
+{
+    "sport" : "tenis",
+    "sportskaDisciplina" : "dubl",
+    "vrsta" : "ekipni",
+    "brojIgraca" : "2/2"
+}

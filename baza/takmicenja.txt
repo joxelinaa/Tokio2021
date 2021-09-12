@@ -1,0 +1,127 @@
+/* 1 */
+{
+    "lokacije" : [ 
+        {
+            "lokacija" : "dvorana Saporo"
+        }, 
+        {
+            "lokacija" : "stadion"
+        }
+    ],
+    "ucesnici" : [ 
+        {
+            "ucesnik" : "Srbija",
+            "rezultat" : null
+        }, 
+        {
+            "ucesnik" : "Nemacka",
+            "rezultat" : null
+        }
+    ],
+    "delegati" : [ 
+        {
+            "delegat" : "Natasa Bekvalac"
+        }, 
+        {
+            "delegat" : "Jasmina Gajic"
+        }
+    ],
+    "sport" : "kosarka",
+    "sportskaDisciplina" : "/",
+    "vrsta" : "ekipno",
+    "format" : "Format za kosarku",
+    "pol" : "M",
+    "pocetak" : "5.7.2021.",
+    "kraj" : "15.7.2021.",
+    "unetRaspored" : "ne",
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "lokacije" : [ 
+        {
+            "lokacija" : "stadion"
+        }
+    ],
+    "ucesnici" : [ 
+        {
+            "ucesnik" : "Uki Tuki",
+            "rezultat" : null
+        }, 
+        {
+            "ucesnik" : "Janko Veselinovic",
+            "rezultat" : null
+        }
+    ],
+    "delegati" : [ 
+        {
+            "delegat" : "Jovana Radovic"
+        }
+    ],
+    "sport" : "atletika",
+    "sportskaDisciplina" : "200 metara trcanje",
+    "vrsta" : "individ",
+    "format" : "Format za atletiku/200 metara trcanje",
+    "pol" : "M",
+    "pocetak" : "5.7.2021.",
+    "kraj" : "15.7.2021.",
+    "unetRaspored" : "ne",
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "lokacije" : [ 
+        {
+            "lokacija" : "stadion"
+        }
+    ],
+    "ucesnici" : [ 
+        {
+            "ucesnik" : "Jefimija Miric",
+            "rezultat" : null
+        }, 
+        {
+            "ucesnik" : "Sofia Alfano",
+            "rezultat" : null
+        }, 
+        {
+            "ucesnik" : "Elisa Buro",
+            "rezultat" : null
+        }, 
+        {
+            "ucesnik" : "Garbiela Kafaso",
+            "rezultat" : null
+        }, 
+        {
+            "ucesnik" : "Adele Autin",
+            "rezultat" : null
+        }, 
+        {
+            "ucesnik" : "Zoi Dufort",
+            "rezultat" : null
+        }, 
+        {
+            "ucesnik" : "Lorena Dorn",
+            "rezultat" : null
+        }
+    ],
+    "delegati" : [ 
+        {
+            "delegat" : "Jasmina Gajic"
+        }, 
+        {
+            "delegat" : "Andrea Fedez"
+        }
+    ],
+    "sport" : "atletika",
+    "sportskaDisciplina" : "maraton",
+    "vrsta" : "individ",
+    "format" : "Format za atletiku/maraton",
+    "pol" : "Z",
+    "pocetak" : "5.7.2021.",
+    "kraj" : "15.7.2021.",
+    "unetRaspored" : "ne",
+    "__v" : 0
+}

@@ -1,0 +1,162 @@
+/* 1 */
+{
+    "username" : "admin",
+    "password" : "Admin!!11",
+    "ime" : "Admin",
+    "prezime" : "Admin",
+    "nacionalnost" : "Srbija",
+    "email" : "admin@gmail.com",
+    "tip" : "organizator",
+    "nadgleda" : -1
+}
+
+/* 2 */
+{
+    "username" : "jaskic",
+    "password" : "Jasko!!11",
+    "ime" : "Jasko",
+    "prezime" : "Tamindzic",
+    "nacionalnost" : "Srbija",
+    "email" : "jasko@gmail.com",
+    "tip" : "vodja nacionalne delegacije",
+    "nadgleda" : -1
+}
+
+/* 3 */
+{
+    "username" : "joxelinaa",
+    "password" : "Joksi!!11",
+    "ime" : "Jovana",
+    "prezime" : "Radovic",
+    "nacionalnost" : "Srbija",
+    "email" : "jovana@gmail.com",
+    "tip" : "delegat",
+    "nadgleda" : 1
+}
+
+/* 4 */
+{
+    "username" : "nadja",
+    "ime" : "Nadja",
+    "prezime" : "Radovic",
+    "password" : "Nadja!!11",
+    "nacionalnost" : "Srbija",
+    "email" : "nadja@gmail.com",
+    "tip" : "delegat",
+    "nadgleda" : 0,
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "username" : "italijan",
+    "ime" : "Damiano",
+    "prezime" : "Ferragni",
+    "password" : "Dami!!11",
+    "nacionalnost" : "Italija",
+    "email" : "dami@gmail.com",
+    "tip" : "vodja nacionalne delegacije",
+    "nadgleda" : -1
+}
+
+/* 6 */
+{
+    "username" : "francuz",
+    "ime" : "Pjer",
+    "prezime" : "La Pja",
+    "password" : "Pjer!!11",
+    "nacionalnost" : "Francuska",
+    "email" : "pjer@gmail.com",
+    "tip" : "vodja nacionalne delegacije",
+    "nadgleda" : -1
+}
+
+/* 7 */
+{
+    "username" : "hani",
+    "ime" : "Hani",
+    "prezime" : "Matahari",
+    "password" : "Hari!!11",
+    "nacionalnost" : "Italija",
+    "email" : "hari@gmail.com",
+    "tip" : "delegat",
+    "nadgleda" : 0
+}
+
+/* 8 */
+{
+    "username" : "nata",
+    "ime" : "Natasa",
+    "prezime" : "Bekvalac",
+    "password" : "Nata!!11",
+    "nacionalnost" : "Hrvatska",
+    "email" : "nata@gmail.com",
+    "tip" : "delegat",
+    "nadgleda" : 1,
+    "__v" : 0
+}
+
+/* 9 */
+{
+    "username" : "borko",
+    "ime" : "Borivoje",
+    "prezime" : "Timojevic",
+    "password" : "Boro!!11",
+    "nacionalnost" : "Hrvatska",
+    "email" : "borko@gmail.com",
+    "tip" : "vodja nacionalne delegacije",
+    "nadgleda" : -1,
+    "__v" : 0
+}
+
+/* 10 */
+{
+    "username" : "ana",
+    "ime" : "Ana",
+    "prezime" : "Merkel",
+    "password" : "Anna!!11",
+    "nacionalnost" : "Nemacka",
+    "email" : "ana@gmail.com",
+    "tip" : "vodja nacionalne delegacije",
+    "nadgleda" : -1,
+    "__v" : 0
+}
+
+/* 11 */
+{
+    "username" : "hajdi",
+    "ime" : "Hajdi",
+    "prezime" : "Hesel",
+    "password" : "Hajdi!!11",
+    "nacionalnost" : "Nemacka",
+    "email" : "hajdi@gmail.com",
+    "tip" : "delegat",
+    "nadgleda" : 0,
+    "__v" : 0
+}
+
+/* 12 */
+{
+    "username" : "jasmina",
+    "ime" : "Jasmina",
+    "prezime" : "Gajic",
+    "password" : "Jasm!!11",
+    "nacionalnost" : "Srbija",
+    "email" : "jasmina@gmail.com",
+    "tip" : "delegat",
+    "nadgleda" : 2,
+    "__v" : 0
+}
+
+/* 13 */
+{
+    "username" : "andrea",
+    "ime" : "Andrea",
+    "prezime" : "Fedez",
+    "password" : "Andrea!!11",
+    "nacionalnost" : "Italija",
+    "email" : "andrea@gmail.com",
+    "tip" : "delegat",
+    "nadgleda" : 1,
+    "__v" : 0
+}

@@ -1,0 +1,647 @@
+/* 1 */
+{
+    "imePrezime" : "Pera Peric",
+    "zemlja" : "Srbija",
+    "sport" : "atletika",
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "100 metara trcanje"
+        }, 
+        {
+            "disciplina" : "bacanje kugle"
+        }, 
+        {
+            "disciplina" : "troskok"
+        }
+    ],
+    "pol" : "M",
+    "osvajac" : "da"
+}
+
+/* 2 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "100 metara trcanje"
+        }, 
+        {
+            "disciplina" : "stafetno trcanje 100"
+        }
+    ],
+    "imePrezime" : "Usain Bolt",
+    "zemlja" : "Srbija",
+    "sport" : "atletika",
+    "pol" : "M",
+    "osvajac" : "da",
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "stafetno trcanje 100"
+        }, 
+        {
+            "disciplina" : "200 metara trcanje"
+        }, 
+        {
+            "disciplina" : "400 metara trcanje"
+        }, 
+        {
+            "disciplina" : "100 metara trcanje"
+        }
+    ],
+    "imePrezime" : "Kaja Kajic",
+    "zemlja" : "Srbija",
+    "sport" : "atletika",
+    "pol" : "Z",
+    "osvajac" : "da",
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "stafetno trcanje 100"
+        }, 
+        {
+            "disciplina" : "200 metara trcanje"
+        }
+    ],
+    "imePrezime" : "Uki Tuki",
+    "zemlja" : "Srbija",
+    "sport" : "atletika",
+    "pol" : "M",
+    "osvajac" : "da",
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "skok u vis"
+        }
+    ],
+    "imePrezime" : "Danijele Greko",
+    "zemlja" : "Italija",
+    "sport" : "atletika",
+    "pol" : "M",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "maraton"
+        }
+    ],
+    "imePrezime" : "Jefimija Miric",
+    "zemlja" : "Srbija",
+    "sport" : "atletika",
+    "pol" : "Z",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 7 */
+{
+    "imePrezime" : "Ivana Spanovic",
+    "zemlja" : "Srbija",
+    "sport" : "atletika",
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "troskok"
+        }, 
+        {
+            "disciplina" : "100 metara trcanje"
+        }
+    ],
+    "pol" : "Z",
+    "osvajac" : "da"
+}
+
+/* 8 */
+{
+    "imePrezime" : "Giani Fedez",
+    "zemlja" : "Italija",
+    "sport" : "atletika",
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "troskok"
+        }
+    ],
+    "pol" : "M",
+    "osvajac" : "ne"
+}
+
+/* 9 */
+{
+    "imePrezime" : "Olivera Jevtic",
+    "zemlja" : "Srbija",
+    "sport" : "atletika",
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "100 metara trcanje"
+        }
+    ],
+    "pol" : "Z",
+    "osvajac" : "da"
+}
+
+/* 10 */
+{
+    "imePrezime" : "Vera Nikolic",
+    "zemlja" : "Srbija",
+    "sport" : "atletika",
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "100 metara trcanje"
+        }
+    ],
+    "pol" : "Z",
+    "osvajac" : "da"
+}
+
+/* 11 */
+{
+    "imePrezime" : "Martina Merlo",
+    "zemlja" : "Italija",
+    "sport" : "atletika",
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "100 metara trcanje"
+        }
+    ],
+    "pol" : "Z",
+    "osvajac" : "da"
+}
+
+/* 12 */
+{
+    "imePrezime" : "Eleonora Giordi",
+    "zemlja" : "Italija",
+    "sport" : "atletika",
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "100 metara trcanje"
+        }
+    ],
+    "pol" : "Z",
+    "osvajac" : "da"
+}
+
+/* 13 */
+{
+    "imePrezime" : "Elena Belo",
+    "zemlja" : "Italija",
+    "sport" : "atletika",
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "100 metara trcanje"
+        }
+    ],
+    "pol" : "Z",
+    "osvajac" : "ne"
+}
+
+/* 14 */
+{
+    "imePrezime" : "Flora Gui",
+    "zemlja" : "Francuska",
+    "sport" : "atletika",
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "100 metara trcanje"
+        }
+    ],
+    "pol" : "Z",
+    "osvajac" : "da"
+}
+
+/* 15 */
+{
+    "imePrezime" : "Melani Melfort",
+    "zemlja" : "Francuska",
+    "sport" : "atletika",
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "100 metara trcanje"
+        }
+    ],
+    "pol" : "Z",
+    "osvajac" : "da"
+}
+
+/* 16 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "skok u dalj"
+        }
+    ],
+    "imePrezime" : "Jasna Kovac",
+    "zemlja" : "Hrvatska",
+    "sport" : "atletika",
+    "pol" : "Z",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 17 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "skok u dalj"
+        }
+    ],
+    "imePrezime" : "Mira Femic",
+    "zemlja" : "Hrvatska",
+    "sport" : "atletika",
+    "pol" : "Z",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 18 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "skok u dalj"
+        }, 
+        {
+            "disciplina" : "skok s motkom"
+        }
+    ],
+    "imePrezime" : "Dragana Tuzlic",
+    "zemlja" : "Hrvatska",
+    "sport" : "atletika",
+    "pol" : "Z",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 19 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "10m vazdusna puska"
+        }
+    ],
+    "imePrezime" : "Oliver Kan",
+    "zemlja" : "Nemacka",
+    "sport" : "streljastvo",
+    "pol" : "M",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 20 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "10m vazdusna puska"
+        }
+    ],
+    "imePrezime" : "Markus Merk",
+    "zemlja" : "Nemacka",
+    "sport" : "streljastvo",
+    "pol" : "M",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 21 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "10m vazdusna puska"
+        }
+    ],
+    "imePrezime" : "Rajner Klimke",
+    "zemlja" : "Nemacka",
+    "sport" : "streljastvo",
+    "pol" : "M",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 22 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "10m vazdusna puska"
+        }
+    ],
+    "imePrezime" : "Tomas Miler",
+    "zemlja" : "Nemacka",
+    "sport" : "streljastvo",
+    "pol" : "M",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 23 */
+{
+    "imePrezime" : "Srbija",
+    "zemlja" : "Srbija",
+    "sport" : "kosarka",
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "/"
+        }
+    ],
+    "pol" : "M",
+    "osvajac" : "ne"
+}
+
+/* 24 */
+{
+    "imePrezime" : "Nemacka",
+    "zemlja" : "Nemacka",
+    "sport" : "kosarka",
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "/"
+        }
+    ],
+    "pol" : "M",
+    "osvajac" : "ne"
+}
+
+/* 25 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "singl"
+        }
+    ],
+    "imePrezime" : "Teniser 1",
+    "zemlja" : "Srbija",
+    "sport" : "tenis",
+    "pol" : "M",
+    "osvajac" : "da",
+    "__v" : 0
+}
+
+/* 26 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "singl"
+        }
+    ],
+    "imePrezime" : "Teniser 2",
+    "zemlja" : "Srbija",
+    "sport" : "tenis",
+    "pol" : "M",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 27 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "singl"
+        }
+    ],
+    "imePrezime" : "Teniser 3",
+    "zemlja" : "Srbija",
+    "sport" : "tenis",
+    "pol" : "M",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 28 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "singl"
+        }
+    ],
+    "imePrezime" : "Teniser 4",
+    "zemlja" : "Srbija",
+    "sport" : "tenis",
+    "pol" : "M",
+    "osvajac" : "da",
+    "__v" : 0
+}
+
+/* 29 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "singl"
+        }
+    ],
+    "imePrezime" : "Teniser 5",
+    "zemlja" : "Srbija",
+    "sport" : "tenis",
+    "pol" : "M",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 30 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "singl"
+        }
+    ],
+    "imePrezime" : "Teniser 6",
+    "zemlja" : "Srbija",
+    "sport" : "tenis",
+    "pol" : "M",
+    "osvajac" : "da",
+    "__v" : 0
+}
+
+/* 31 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "singl"
+        }
+    ],
+    "imePrezime" : "Teniser 7",
+    "zemlja" : "Srbija",
+    "sport" : "tenis",
+    "pol" : "M",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 32 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "singl"
+        }
+    ],
+    "imePrezime" : "Teniser 8",
+    "zemlja" : "Srbija",
+    "sport" : "tenis",
+    "pol" : "M",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 33 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "/"
+        }
+    ],
+    "imePrezime" : "Francuska",
+    "zemlja" : "Srbija",
+    "sport" : "kosarka",
+    "pol" : "Z",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 34 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "/"
+        }
+    ],
+    "imePrezime" : "Nemacka",
+    "zemlja" : "Srbija",
+    "sport" : "kosarka",
+    "pol" : "Z",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 35 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "100 metara trcanje"
+        }, 
+        {
+            "disciplina" : "200 metara trcanje"
+        }
+    ],
+    "imePrezime" : "Janko Veselinovic",
+    "zemlja" : "Srbija",
+    "sport" : "atletika",
+    "pol" : "M",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 36 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "/"
+        }
+    ],
+    "imePrezime" : "Hrvatska",
+    "zemlja" : "Srbija",
+    "sport" : "kosarka",
+    "pol" : "Z",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 37 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "maraton"
+        }
+    ],
+    "imePrezime" : "Sofia Alfano",
+    "zemlja" : "Italija",
+    "sport" : "atletika",
+    "pol" : "Z",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 38 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "maraton"
+        }
+    ],
+    "imePrezime" : "Elisa Buro",
+    "zemlja" : "Italija",
+    "sport" : "atletika",
+    "pol" : "Z",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 39 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "maraton"
+        }
+    ],
+    "imePrezime" : "Garbiela Kafaso",
+    "zemlja" : "Italija",
+    "sport" : "atletika",
+    "pol" : "Z",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 40 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "maraton"
+        }
+    ],
+    "imePrezime" : "Adele Autin",
+    "zemlja" : "Francuska",
+    "sport" : "atletika",
+    "pol" : "Z",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 41 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "maraton"
+        }
+    ],
+    "imePrezime" : "Zoi Dufort",
+    "zemlja" : "Francuska",
+    "sport" : "atletika",
+    "pol" : "Z",
+    "osvajac" : "ne",
+    "__v" : 0
+}
+
+/* 42 */
+{
+    "sportskaDisciplina" : [ 
+        {
+            "disciplina" : "maraton"
+        }
+    ],
+    "imePrezime" : "Lorena Dorn",
+    "zemlja" : "Nemacka",
+    "sport" : "atletika",
+    "pol" : "Z",
+    "osvajac" : "ne",
+    "__v" : 0
+}
