@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Olimpijske igre</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="login">Login</a>
+          <a class="nav-link" href="register">Registracija</a>
+          <a class="nav-link" href="neregistrovan-korisnik">Neregistrovan korisnik</a>
+          <button class="nav-link" (click)="odjaviSe()">Odjavi se</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+<nav aria-label="breadcrumb" style="background-color: lightblue;">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="organizator">Organizator</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Korisnicki zahtevi</li>
+    </ol>
+  </nav>
+<table border="1" class="table">
+    <thead>
+        <tr>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Nacionalnost</th>
+            <th>Tip</th>
+            <th>Odobri</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let z of zahtevi'>
+            <td>{{z.ime}}</td>
+            <td>{{z.prezime}}</td>
+            <td>{{z.nacionalnost}}</td>
+            <td>{{z.tip}}</td>
+            <td><input type="checkbox" name='zahtevi' [(ngModel)]='z.cekiran'></td>
+        </tr>
+    </tbody>
+    <button (click)='odobri()'>Odobri</button>
+</table>
